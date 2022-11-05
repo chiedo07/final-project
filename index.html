@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link href='https://fonts.googleapis.com/css?family=Rouge Script' rel='stylesheet'>
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://kit.fontawesome.com/73ede0e5bc.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+ <body>
+       <!--header section-->
+      <header>
+         <img src="./images/logo.svg"><img src="./images/icon-cart.svg" alt="icon-cart" class="avat"><img src="./images/image-avatar.png" alt="image-avatar" class="avat">
+         <input type="checkbox" class="side-bar" id="side-bar"/>
+         <label class="hamb" for="side-bar"><span class="hamburger"></span></label>
+         <nav id="hdr">
+             <ul class="menu">
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+             </ul>
+          </nav>
+          <div class="newdiv">
+            <div id="cart">
+             <img src="./images/icon-cart.svg" alt="icon-cart">
+             <div id="img-ava">
+               <img src="./images/image-avatar.png" alt="image-avatar">
+             </div>
+         </div>
+         </div>
+      </header>
+           <!--product container for large scrrens-->
+     <div class="flex-container">
+      
+         <div class="item-list"> 
+            <img src="/images/image-product-1.jpg" width="460" height="445">
+             <div style=" width:500px;margin-left:120px;">
+                  <h4>SNEAKER COMPANY</h4>
+                  <h2>FALL LIMITED <br>SNEAKERS</h2>
+                  <P>These low-profile sneakers are your perfect casual wear
+                  companion. Featuring a durable rubber outer sole. they'll
+                  withstand everything the weather can offer.
+                  </P><br>
+                  <span style="font-weight: bolder; font-size:30px;">$125.00</span>
+                  <span style="color:rgb(247, 162, 4);border:1px solid;border-radius:20%;margin-left:20px;">50%</span>
+                  <br>
+                  <span style="text-decoration: line-through;margin-top:900px;margin-left: 4px;">$250.00</span>
+                  <div class="rbc">
+                     <div class="counter">
+                         <div class="btn">-</div>
+                         <div class="count">1</div>
+                         <div class="btn">+</div>
+                     </div>
+                     <button class="button"><img src="./images/icon-cart.svg" alt="icon-cart">Add to cart</button>
+                   </div>
+             </div>
+          </div>
+          <div class="item-list">
+             <div class="thumb">
+                 <div >              
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="" class="thumn-prod" onclick="currentslide(1)"></div>
+                 <div class="thumn-prod"> 
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="" class="thumn-prod" onclick="currentslide(2)"></div>
+                 <div class="thumn-prod">
+                    <img src="/images/image-product-3-thumbnail.jpg" alt="" class="thumn-prod" onclick="currentslide(3)"></div>
+                  <div class="thumn-prod">
+                    <img src="/images/image-product-4-thumbnail.jpg" alt="" class="thumn-prod" onclick="currentslide(4)"></div>
+               </div>
+           </div>
+     </div>
+     <!--product containers for small screens-->
+     <div class="container">
+         
+         <div class="mySlides">
+           <img src="/images/image-product-1.jpg" width="400">
+         </div>
+        <div class="mySlides">
+          <img src="/images/image-product-2.jpg" width="400">
+         </div>
+         <div class="mySlides">
+            <img src="/images/image-product-3.jpg" width="400">
+         </div>
+         <div class="mySlides">
+           <img src="/images/image-product-4.jpg" width="400">
+         </div>
+         <div class="new">
+            <h3>SNEAKERS COMPANY</h3>
+            <h2>FALL LIMITED EDITION SNEAKERS</h2>
+            <p>These low-profile sneakers are your perfect casual wear
+               companion. Featuring a durable rubber outer sole. they'll
+               withstand everything the weather can offer.</p>
+               <span class="value">$125.00</span>
+                        <span class="value1">50%</span>
+                        <br>
+                        <span class="value2">$250.00</span>
+                        <div class="rbc">
+                           <div class="counter">
+                               <div class="btn">-</div>
+                               <div class="count">1</div>
+                               <div class="btn">+</div>
+                           </div>
+                           <button class="button"><img src="./images/icon-cart.svg" alt="icon-cart">Add to cart</button>
+                         </div>
+           </div>
+         <a class="prev" onclick="incslide(-1)"><img src="/images/icon-previous.svg" alt=""></a>
+         <a class="next" onclick="incslide(1)"><img src="/images/icon-next.svg" alt=""></a>
+         
+         <div class="item-list" style="height:90px;">
+            <div class="thumb">
+                <div >              
+                   <img src="./images/image-product-1-thumbnail.jpg" alt="" class="thumn-prod" onclick=" open(); currentslide(1)"></div>
+                <div class="thumn-prod"> 
+                   <img src="./images/image-product-2-thumbnail.jpg" alt="" class="thumn-prod" onclick="open(); currentslide(2)"></div>
+                <div class="thumn-prod">
+                   <img src="/images/image-product-3-thumbnail.jpg" alt="" class="thumn-prod" onclick="open(); currentslide(3)"></div>
+                 <div class="thumn-prod">
+                   <img src="/images/image-product-4-thumbnail.jpg" alt="" class="thumn-prod" onclick="open(); currentslide(4)"></div>
+              </div>
+          </div>
+          
+      </div>
+     <div class="new1">
+      <h3>SNEAKERS COMPANY</h3>
+      <h2>FALL LIMITED EDITION SNEAKERS</h2>
+      <p>These low-profile sneakers are your perfect casual wear
+         companion. Featuring a durable rubber outer sole. they'll
+         withstand everything the weather can offer.</p>
+         <span class="value">$125.00</span>
+                  <span class="value1">50%</span>
+                  <br>
+                  <span class="value2">$250.00</span>
+                  <div class="rbc">
+                     <div class="counter">
+                         <div class="btn">-</div>
+                         <div class="count">1</div>
+                         <div class="btn">+</div>
+                     </div>
+                     <button class="button"><img src="./images/icon-cart.svg" alt="icon-cart">Add to cart</button>
+                   </div>
+     </div>
+     <script src="/index.js"></script>
+   <footer></footer>
+  </body>
+</html>
